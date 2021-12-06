@@ -1,0 +1,29 @@
+A/B Test
+
+Apakah kelompok Eksperimen yang mendapat perlakuan kinerjanya lebih baik setelah diberikan perlakuan?
+
+The rule of thumb is as below:
+1. Split the targeted population into two groups: Control (no treatment) and Experiment (gets treatment)
+2. Determine the performance metrics that we want to measure, and what is the desired outcome (with treatment, we should expect Experiment group performs better than Control group)
+3. Ensure both Control & Experiment groups have the same performance before treatment
+4. Apply the treatment for a certain time period
+5. Evaluate the result, whether if Experiment group performs better than Control group
+
+For A/B testing, we should use two samples test that is not paired, because:
+1. We want to compare two samples or two groups (Control group and Experiment group).
+2. What we want to compare is the difference between Control group and Experiment group post-treatment (not paired or independent), NOT THE DIFFERENCE BETWEEN pre-treatment and post-treatment (paired or dependent).
+
+Evaluating the Result of A/B Test:
+1. Pre-treatment period: Ensure that before getting the treatment, both Control & Experiment groups have the same performance
+2. Post-treatment period: Prove the hypothesis of whether if Experiment group performs better (has a significantly higher performance) compared to Control group
+
+Sumber: https://cindyhosea.medium.com/hypothesis-testing-for-a-b-test-an-application-of-inferential-statistics-5ae2e779ff04
+
+
+Ringkasan:
+1. Bagi data menjadi 2 kelompok, kelompok kontrol dan kelompok eksperimen.
+2. Lakukan test statistik pada kelompok itu. Fungsinya untuk memastikan kedua kelompok tersebut sama/tidak siginifikan berbeda.
+3. Berikan treatment pada kelompok eksperimen dan jangan berikan ke kelompok kontrol.
+4. Lakukan test statistik pada kelompok tersebut, lihat ada perbedaan yang signifikan atau tidak.
+5. Kalau ada berarti treatmentnya menunjukan signfikansi.
+
