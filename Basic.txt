@@ -1,0 +1,30 @@
+Basic 
+https://www.youtube.com/watch?v=Ims3L_hfLJU&ab_channel=KrishNaik
+
+====
+Mean -> kalo datanya distribusi normal, mean cukup merepresentasikan.
+Median -> pake ini ketika ada outliers, kenapa? karena lebih representatif
+Mode -> bisa dipake ketika ada missing value. Jadi diisi dengan data yang paling byk muncul.
+
+Jadi, ketika ada missing value (NULL):
+1. Cek dulu ada banyak atau engga. Kalo data kita banyak dan missing value-nya cuma sedikit, mending drop aja
+2. - Kalo ga mau di drop, dan datanya kategorikal, bisa pake mode. 
+   - Kalo ga mau didrop dan datanya numerical, cek dlu apakah ada outliers atau engga, kalo ada mending pake median, kalo ga ada baru mean.
+   
+Skew positif = mean > median, banyak data yg mendekati 0
+Skew negatif = mean < median, banyak data yang menjauhi 0
+
+=====
+Standard Deviation: Semakin kecil std, maka persebaran datanya banyak yang dekat dengan mean.
+1. Cari mean
+2. Mean dikurangin dengan masing-masing titik
+3. Hasilnya dikuadradkan (vaiance) terus dibagi dengan n
+4. Hasilnya diakarin.
+
+
+====
+Outliers
+Menghitung low = Q1 - (1,5*(Q3-Q1))
+Menghitung high = Q3 + (1,5*(Q3-Q1))
+
+Ngecek outliers juga bisa pake box plot/scatter plot.
